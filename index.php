@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>My Blog</title>
+     <!-- Style(s) -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <?php
@@ -21,15 +23,12 @@
                
                 $articles[] = new Article($article->id,$article->title,$article->content);
             }
-        } 
-        
-    
-    
+        }    
     
     }   
     
     ?>
-    <h2>Our Articles</h2>
+    <h1>Programming Languages</h1>
     <?php if ( !empty( $articles ) ) : // If there are articles, output them! ?>
     <?php foreach ( $articles as $article ) $article->output(); ?>
     <?php else : // If there are no articles though... ?>

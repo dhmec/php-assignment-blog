@@ -15,14 +15,16 @@ class Article
     public function output()
     {
         ?>
-        <dl>
-          <dt>Article ID</dt>
-          <dd><?php echo $this->id; ?></dd>
-          <dt>Article Title</dt>
-          <dd><?php echo $this->title; ?></dd>
-          <dt>Article Content</dt>
-          <dd><?php echo $this->content; ?></dd>         
-        </dl>
+        <div id="article-container">
+          <div>
+            <h3>Article ID</h3>
+            <p><?php echo $this->id; ?></p>
+          </div>
+          <h3>Article Title</h3>
+          <p><?php echo $this->title; ?></p>
+          <h3>Article Content</h3>
+          <p><?php echo $this->content; ?></p>         
+        </div>
       <?php
     }
 
