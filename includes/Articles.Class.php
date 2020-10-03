@@ -15,11 +15,9 @@ class Article
     public function output()
     {
         ?>
-        <div id="article-container">
-          <div>
-            <h3>Article ID</h3>
-            <p><?php echo $this->id; ?></p>
-          </div>
+        <div id="article-container">          
+          <h3>Article ID</h3>
+          <p><?php echo $this->id; ?></p>         
           <h3>Article Title</h3>
           <p><?php echo $this->title; ?></p>
           <h3>Article Content</h3>
